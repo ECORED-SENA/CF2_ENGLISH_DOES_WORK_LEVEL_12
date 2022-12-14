@@ -3,15 +3,19 @@
   BannerInterno(icono="fas fa-sitemap" titulo="Síntesis")
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
 
-    p Con el diagrama de actividades se termina la descripción de las tres técnicas usadas para la especificación y el análisis de requisitos, como se pudo analizar cada una de las técnicas nos brinda características para lograr representar gráficamente y de una forma clara, los requisitos que un usuario necesita poder cumplir satisfactoriamente con las solicitudes de los clientes y usuarios, por otro lado se pueden usar todas las técnicas en una especificación y análisis de requisitos si se ve la necesidad.
-    p.mb-5 A continuación, se muestra un mapa conceptual con los elementos más importantes desarrollados en este componente.
-
+    .row.align-items-center.mb-5.p-4.bg-c14
+      .col-lg-4.mb-4.mb-lg-0
+        figure
+          img(src="@/assets/curso/sinte/img1.png", style="width:350px").m-auto
+      .col-lg-8.p-4.bg-c2.shadow-lg
+        p #[i.txt-c7 Up to this point, we have been able to appreciate everything that has to do with the mixed tenses, contrast connectors, slang, reporting verbs, feeling verbs, and pronunciation tips, which is why we invite you to consider the following conceptual scheme that summarizes the subject treated:]
+        p.mb-0 Hasta aquí hemos podido apreciar todo lo que tiene que ver con los tiempos mezclados, los conectores de contraste, expresiones idiomáticas, los verbos de reporte, los verbos de sentimiento y los consejos de pronunciación, por lo que lo invitamos a considerar el siguiente esquema conceptual que resume el tema tratado:
     .row.justify-content-center
       .col-lg-10.mb-5
         figure
-          img(src="@/assets/curso/temas/sintesis.svg", alt="alt")
+          img(src="@/assets/curso/sinte/sintesis.svg", alt="alt")
       .col-auto
-        a.anexo.mb-4(:href="obtenerLink('/downloads/Sintesis.pdf')" target="_blank")
+        a.anexo.mb-4(:href="obtenerLink('/downloads/anexo2.pdf')" target="_blank")
           .anexo__icono
             img(src="@/assets/template/icono-pdf.svg")
           .anexo__texto
