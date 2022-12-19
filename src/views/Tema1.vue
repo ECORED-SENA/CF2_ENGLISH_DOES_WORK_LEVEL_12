@@ -102,7 +102,7 @@
                                   )
                                 .col
                                   p.mb-0 #[i Do + subject + verb + complement?]
-                                  p.mb-0 #[i #[b Do we study markets?.]]
+                                  p.mb-0 #[i #[b Do we study markets?]]
                             td
                               .row.align-items-center
                                 .col-auto

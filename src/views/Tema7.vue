@@ -196,7 +196,7 @@ export default {
         {
           personaje: 'Marcos',
           textoIng:
-            '<i>I know, it is</i> *** <i>hot there and I hate the heat </i>',
+            '<i>I know, it is</i> *** <i>hot there and I hate the heat.</i>',
           textoEsp: 'Lo sé, allí hace mucho calor y lo odio.',
           audio: require('@/assets/curso/tema7/Marcos2.mp3'),
           palabra: 'extremely',

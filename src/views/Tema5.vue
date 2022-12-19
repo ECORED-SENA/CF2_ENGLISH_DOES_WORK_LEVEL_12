@@ -254,7 +254,7 @@ export default {
     dialogo: {
       personajes: [
         {
-          nombre: 'Harry',
+          nombre: 'Mary',
           img: require('@/assets/curso/tema5/img6.svg'),
         },
         {
@@ -264,11 +264,11 @@ export default {
       ],
       dialogo: [
         {
-          personaje: 'Harry',
+          personaje: 'Mary',
           textoIng:
             '<i>Did you</i> *** <i>your manager to report the inconvenience?</i>',
           textoEsp: '¿Le pediste a tu gerente que informara del inconveniente?',
-          audio: require('@/assets/curso/tema5/Harry1.mp3'),
+          audio: require('@/assets/curso/tema5/Mary1.mp3'),
           palabra: 'ask',
         },
         {
@@ -280,11 +280,11 @@ export default {
           palabra: 'told',
         },
         {
-          personaje: 'Harry',
+          personaje: 'Mary',
           textoIng:
             '<i>Remember I</i> *** <i>you about how forgetful he is.</i>',
           textoEsp: 'Recuerda que te advertí de lo olvidadizo que es.',
-          audio: require('@/assets/curso/tema5/Harry2.mp3'),
+          audio: require('@/assets/curso/tema5/Mary2.mp3'),
           palabra: 'warned',
         },
         {
