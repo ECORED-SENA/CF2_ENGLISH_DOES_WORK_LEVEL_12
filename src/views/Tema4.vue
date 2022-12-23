@@ -3,27 +3,27 @@
   BannerInterno
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
     
-    .titulo-principal.color-acento-contenido
+    .titulo-principal.color-acento-contenido(data-aos="flip-up")
       .titulo-principal__numero
         span 4
       h1 #[i Slang] (Expresiones coloquiales)
     .row.mb-5
-      .col-lg-7.mb-4.mb-lg-0
+      .col-lg-7.mb-4.mb-lg-0(data-aos="fade-right")
         traductor.color-primario
           div(slot="textoIngles")
             p.mb-0 #[i Slang refers to expressions understood by native speakers of a language that may not be understood by non-native speakers. These expressions cannot be translated word by word in order to understand them. They have to be understood as a whole and in a context. One of these expressions used in a different context may have a completely different meaning. Let’s study some of them.]
           div(slot="textoEspanol")
             p.mb-0 #[i Slang] se refiere a las expresiones que entienden los hablantes nativos de una lengua y que pueden no ser comprendidas por los no nativos. Estas expresiones no pueden traducirse palabra por palabra para entenderlas. Hay que entenderlas en su conjunto y en un contexto. Una de estas expresiones utilizada en un contexto diferente puede tener un significado completamente distinto. Estudiemos algunas de ellas:
-      .col-lg-5
+      .col-lg-5(data-aos="fade-left")
         figure
           img(src="@/assets/curso/tema4/img1.png", style="width:450px").m-auto
     .row.px-5.pt-5.bg-c9
       .col-12
         .row.align-items-end.mb-5
-          .col-4.d-none.d-lg-block
+          .col-4.d-none.d-lg-block(data-aos="fade-right")
             figure
               img(src="@/assets/curso/tema4/img2.svg", style="width:450px").m-auto
-          .col-lg-8
+          .col-lg-8(data-aos="fade-left")
             .tarjeta.tarjeta--azul.shadow-lg.p-4
               SlyderF(columnas="col-12 col-md-6")
                 .tarjeta.color-acento-botones.p-3.p-lg-4
@@ -194,7 +194,7 @@
                   )
                     .indicador--click(v-if="mostrarIndicadorTarjetaAudio")
                   p.ms-3 Esto es algo bueno para todos, solo firma.
-        .row.mb-5
+        .row.mb-5(data-aos="fade-right")
           .col-12.p-4.bg-c7
             .row.align-items-center
               .col-lg-11.mb-4.mb-lg-0
@@ -202,7 +202,7 @@
               .col-lg-1
                 figure
                   img(src="@/assets/curso/tema1/img11.svg", style="width:150px").m-auto
-        Dialogo.color-primario(:dialogo="dialogo")
+        Dialogo.color-primario(:dialogo="dialogo")(data-aos="fade-left")
           template(#nombre-actividad) Arrastrar y Soltar
           template(#titulo-actividad) #[i Slang practice]
           template(#descripcion-actividad) Arrastra y suelta cada una de las palabras en el orden correcto.

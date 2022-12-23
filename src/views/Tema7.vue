@@ -3,31 +3,31 @@
   BannerInterno
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
     
-    .titulo-principal.color-acento-contenido
+    .titulo-principal.color-acento-contenido(data-aos="flip-up")
       .titulo-principal__numero
         span 7
       h1 #[i Pronunciation tips] (Tips de pronunciación)
     .row.mb-5
-      .col-lg-9.mb-4.mb-lg-0
+      .col-lg-9.mb-4.mb-lg-0(data-aos="fade-right")
         traductor.color-primario
           div(slot="textoIngles")
             p.mb-0 #[i In this part, we are going to work on sentence stress. There are four types of stress in English that will help your emphasis or focus the listener’s attention on what you want them to concentrate. The four types of stress are: tonic, emphatic, contrastive, and new information stress. Let’s see how each of them work.]
           div(slot="textoEspanol")
             p.mb-0 En esta parte, vamos a trabajar el acento de las frases. Hay cuatro tipos de acento en inglés que le ayudarán a enfatizar o centrar la atención del oyente en lo que usted quiere que se concentre. Los cuatro tipos de acento son: tónico, enfático, contrastivo y de nueva información. Veamos cómo funciona cada uno de ellos.
-      .col-lg-3
+      .col-lg-3(data-aos="fade-left")
         figure
           img(src="@/assets/curso/tema7/img1.svg", style="width:250px").m-auto
     .row.align-items-end.mb-5
-      .col-lg-4.d-none.d-lg-block
+      .col-lg-4.d-none.d-lg-block(data-aos="fade-right")
         figure
           img(src="@/assets/curso/tema7/img2.svg", style="width:450px").m-auto
-      .col-lg-8
+      .col-lg-8(data-aos="fade-left")
         AcordionA(tipo="b" clase-tarjeta="tarjeta tarjeta--azul")
           .row(titulo="<em>Tonic Stress</em>")
             .col-12.px-4
               .row
                 .col-12.p-4.bg-c2
-                  p #[i.txt-c7 Tonic stress refers to emphasizing your intonation on the most relevant words of a sentence. The tonic stress is not only for one word of the sentence. It is necessary to have in mind what are the words you want your listener to focus on.] #[span.txt-c5 / El acento tónico se refiere a enfatizar su entonación en las palabras más relevantes de una frase. El acento tónico no es sólo para una palabra de la frase. Es necesario tener en cuenta cuáles son las palabras en las que quiere que se centre su oyente.]
+                  p #[i.txt-c7 Tonic stress refers to emphasizing your intonation on the most relevant words of a sentence. The tonic stress is not only for one word of the sentence. It is necessary to have in mind what are the words you want your listener to focus on.] #[span.txt-c5 / El acento tónico se refiere a enfatizar su entonación en las palabras más relevantes de una frase. El acento tónico no es solo para una palabra de la frase. Es necesario tener en cuenta cuáles son las palabras en las que quiere que se centre su oyente.]
                   .row
                     .col-12
                       p #[i #[b Examples:]]
@@ -125,21 +125,21 @@
                         img(src="@/assets/curso/tema7/img4.png", style="width:250px").m-auto
     .row.px-5.pt-5.bg-c13
       .col-12
-        p.mb-5 #[i.txt-c7 English has fifteen vowel sounds represented by the letters a, e, i, o, and u. Vowel sounds are produced with a relatively open vocal tract. So we are going to practice the next video. Listen, repeat, and pay attention to the tips:] #[span.txt-c5 / El inglés tiene quince sonidos vocálicos representados por las letras a, e, i, o y u. Los sonidos de las vocales se producen con un tracto vocal relativamente abierto. Así que vamos a practicar con el siguiente video. Escuche, repita y preste atención a los consejos:]
-        figure.mb-5
+        p.mb-5(data-aos="fade-right") #[i.txt-c7 English has fifteen vowel sounds represented by the letters a, e, i, o, and u. Vowel sounds are produced with a relatively open vocal tract. So we are going to practice the next video. Listen, repeat, and pay attention to the tips:] #[span.txt-c5 / El inglés tiene quince sonidos vocálicos representados por las letras a, e, i, o y u. Los sonidos de las vocales se producen con un tracto vocal relativamente abierto. Así que vamos a practicar con el siguiente video. Escuche, repita y preste atención a los consejos:]
+        figure.mb-5(data-aos="fade-down")
           .video
-            iframe(width="560" height="315" src="https://www.youtube.com/embed/Uy8LGEOSDHA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+            iframe(width="560" height="315" src="https://www.youtube.com/embed/9RWc4jlsQRE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
         .row.mb-5
-          .col-lg-10.mb-4.mb-lg-0
+          .col-lg-10.mb-4.mb-lg-0(data-aos="fade-right")
             traductor.color-primario
               div(slot="textoIngles")
                 p.mb-0 #[i We have learned some tips to improve your pronunciation. Now, let’s see a real life situation in which they can be used. Complete the following conversation using the correct word to complete the sentences:]
               div(slot="textoEspanol")
                 p.mb-0 Hemos aprendido algunos consejos para mejorar su pronunciación. Ahora, veamos una situación de la vida real en la que se pueden utilizar. Complete la siguiente conversación utilizando la palabra correcta para completar las frases:
-          .col-lg-2
+          .col-lg-2(data-aos="fade-left")
             figure
               img(src="@/assets/curso/tema7/img3.svg", style="width:150px").m-auto
-        Dialogo.color-primario(:dialogo="dialogo")
+        Dialogo.color-primario(:dialogo="dialogo")(data-aos="fade-right")
           template(#nombre-actividad) Arrastrar y Soltar
           template(#titulo-actividad) #[i Pronunciation tips practice]
           template(#descripcion-actividad) Arrastra y suelta cada una de las palabras en el orden correcto.

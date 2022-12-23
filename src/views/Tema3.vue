@@ -3,27 +3,27 @@
   BannerInterno
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
     
-    .titulo-principal.color-acento-contenido
+    .titulo-principal.color-acento-contenido(data-aos="flip-up")
       .titulo-principal__numero
         span 3
       h1 #[i Contrast connectors] (conectores de contraste)
     .row.mb-5
-      .col-lg-7.mb-4.mb-lg-0
+      .col-lg-7.mb-4.mb-lg-0(data-aos="fade-right")
         traductor.color-primario
           div(slot="textoIngles")
             p.mb-0 #[i Contrast connectors are expressions and words that allow you to show that you do not agree on the idea that was expressed. There are different connectors that can be used and they are going to be shown next:]
           div(slot="textoEspanol")
             p.mb-0 Los conectores de contraste son expresiones y palabras que permiten mostrar que no se está de acuerdo con la idea expresada. Hay diferentes conectores que se pueden utilizar y se van a mostrar a continuación:
-      .col-lg-5
+      .col-lg-5(data-aos="fade-left")
         figure
           img(src="@/assets/curso/tema3/img1.png", style="width:450px").m-auto
     .row.px-5.pt-5.bg-c8
       .col-12
         .row.align-items-end.mb-5
-          .col-3.d-none.d-lg-block
+          .col-3.d-none.d-lg-block(data-aos="fade-right")
             figure
               img(src="@/assets/curso/tema3/img2.svg", style="width:450px").m-auto
-          .col-lg-9
+          .col-lg-9(data-aos="fade-left")
             .tarjeta.tarjeta--blanca.shadow-lg.p-4
               SlyderA(tipo="b")
                 .row.m-1
@@ -146,8 +146,8 @@
                         )
                           .indicador--click(v-if="mostrarIndicadorTarjetaAudio")
                         p.ms-3 Marcos nunca había llegado tarde al trabajo, pero hoy lo ha hecho.
-        p.mb-5 #[i.txt-c7 Now that we know the contrast connectors, let’s see a real life situation in which they can be used. Complete the following conversation using the correct word to complete the sentences:] #[span.txt-c5 / Ahora que conocemos los conectores de contraste, veamos una situación de la vida real en la que se pueden utilizar. Complete la siguiente conversación utilizando la palabra correcta para completar las frases:]
-        Dialogo.color-primario(:dialogo="dialogo")
+        p.mb-5(data-aos="fade-right") #[i.txt-c7 Now that we know the contrast connectors, let’s see a real life situation in which they can be used. Complete the following conversation using the correct word to complete the sentences:] #[span.txt-c5 / Ahora que conocemos los conectores de contraste, veamos una situación de la vida real en la que se pueden utilizar. Complete la siguiente conversación utilizando la palabra correcta para completar las frases:]
+        Dialogo.color-primario(:dialogo="dialogo")(data-aos="fade-left")
           template(#nombre-actividad) Arrastrar y Soltar
           template(#titulo-actividad) #[i Mixed tenses practice]
           template(#descripcion-actividad) Arrastra y suelta cada una de las palabras en el orden correcto.

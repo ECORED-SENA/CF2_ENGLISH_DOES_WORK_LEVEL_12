@@ -3,27 +3,27 @@
   BannerInterno
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
 
-    .titulo-principal.color-acento-contenido
+    .titulo-principal.color-acento-contenido(data-aos="flip-up")
       .titulo-principal__numero
         span 1
       h1 #[i Applied grammar] (Gramática aplicada)
     .row.mb-5
-      .col-lg-7.mb-4.mb-lg-0
+      .col-lg-7.mb-4.mb-lg-0(data-aos="fade-right")
         traductor.color-primario
           div(slot="textoIngles")
             p.mb-0 #[i When using English, it is important to understand when to use and how to #[b.txt-c1 use the grammar] tenses in this language.  In this first part of the component, we will review and practice the most important characteristics of the grammar structures seen throughout the levels already studied in this course. Let’s take a look at them:]
           div(slot="textoEspanol")
             p.mb-0 A la hora de utilizar el inglés, es importante entender cuándo y cómo utilizar los tiempos gramaticales de esta lengua.  En esta primera parte del componente, revisaremos y practicaremos las características más importantes de las estructuras gramaticales vistas a lo largo de los niveles ya estudiados en este curso. Echemos un vistazo a cada una de ellas:
-      .col-lg-5
+      .col-lg-5(data-aos="fade-left")
         figure
           img(src="@/assets/curso/tema1/img1.png", style="width:450px").m-auto
     .row.p-5.bg-c4.mb-5
       .col-12
         .row.align-items-end
-          .col-2.d-none.d-lg-block
+          .col-2.d-none.d-lg-block(data-aos="fade-right")
             figure
               img(src="@/assets/curso/tema1/img2.svg", style="width:450px").m-auto
-          .col-lg-10
+          .col-lg-10(data-aos="fade-left")
             .tarjeta.tarjeta--blanca.shadow-lg.p-4
               SlyderA(tipo="b")
                 .row.m-1
@@ -768,7 +768,7 @@
                             a.boton.color-acento-botones.me-3(href="https://www.academia.edu/22717813/List_of_616_English_Irregular_Verbs" target="_blank" type="application/pdf")
                               span Ir al sitio
                               i.fas.fa-link
-    .row.mb-5
+    .row.mb-5(data-aos="fade-right")
       .col-12.p-4.bg-c5
         .row.align-items-center
           .col-lg-11.mb-4.mb-lg-0
@@ -776,7 +776,7 @@
           .col-lg-1
             figure
               img(src="@/assets/curso/tema1/img11.svg", style="width:150px").m-auto
-    Dialogo.color-primario(:dialogo="dialogo")
+    Dialogo.color-primario(:dialogo="dialogo")(data-aos="fade-left")
       template(#nombre-actividad) Arrastrar y Soltar
       template(#titulo-actividad) #[i Applied grammar practice]
       template(#descripcion-actividad) Arrastra y suelta cada una de las palabras en el orden correcto.

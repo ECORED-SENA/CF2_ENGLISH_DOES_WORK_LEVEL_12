@@ -3,27 +3,27 @@
   BannerInterno
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
     
-    .titulo-principal.color-acento-contenido
+    .titulo-principal.color-acento-contenido(data-aos="flip-up")
       .titulo-principal__numero
         span 2
       h1 #[i Mixed tenses] (Combinación de tiempos)
     .row.mb-5
-      .col-lg-7.mb-4.mb-lg-0
+      .col-lg-7.mb-4.mb-lg-0(data-aos="fade-right")
         traductor.color-primario
           div(slot="textoIngles")
             p.mb-0 #[i Mixed tenses is a resource used in languages in order to complement ideas or express complex ideas that require more than one grammar structure. They may be mixed in a paragraph or even in the same sentence by using conjunctions. Depending on what the writer or speaker wants to communicate, she or he will combine certain grammar structures. There are no specific rules when mixing tenses. It will only depend on the writer’s or speaker’s intention. Let’s see:]
           div(slot="textoEspanol")
             p.mb-0 Los tiempos combinados son un recurso utilizado en las lenguas para complementar ideas o expresar ideas complejas que requieren más de una estructura gramatical. Pueden mezclarse en un párrafo o incluso en la misma frase mediante el uso de conjunciones. Dependiendo de lo que el escritor o el hablante quiera comunicar, combinará determinadas estructuras gramaticales. No hay reglas específicas a la hora de mezclar los tiempos verbales, solo dependerá de la intención del escritor o del hablante. Veamos: 
-      .col-lg-5
+      .col-lg-5(data-aos="fade-left")
         figure
           img(src="@/assets/curso/tema2/img1.png", style="width:450px").m-auto
     .row.p-5.bg-c4
       .col-12
         .row.align-items-end
-          .col-3.d-none.d-lg-block
+          .col-3.d-none.d-lg-block(data-aos="fade-right")
             figure
               img(src="@/assets/curso/tema2/img1.svg", style="width:450px").m-auto
-          .col-lg-9
+          .col-lg-9(data-aos="fade-left")
             .tarjeta.tarjeta--blanca.shadow-lg.p-4
               SlyderA(tipo="b")
                 .row.m-1
@@ -112,7 +112,7 @@
                           img(src="@/assets/curso/tema2/img4.png", style="width:450px").m-auto
     .row.px-5.pt-5.bg-c6
       .col-12
-        .row.mb-5
+        .row.mb-5(data-aos="fade-right")
           .col-12.p-4.bg-c7
             .row.align-items-center
               .col-lg-11.mb-4.mb-lg-0
@@ -120,7 +120,7 @@
               .col-lg-1
                 figure
                   img(src="@/assets/curso/tema1/img11.svg", style="width:150px").m-auto
-        Dialogo.color-primario(:dialogo="dialogo")
+        Dialogo.color-primario(:dialogo="dialogo")(data-aos="fade-left")
           template(#nombre-actividad) Arrastrar y Soltar
           template(#titulo-actividad) #[i Mixed tenses practice]
           template(#descripcion-actividad) Arrastra y suelta cada una de las palabras en el orden correcto.

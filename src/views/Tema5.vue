@@ -3,27 +3,27 @@
   BannerInterno
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
     
-    .titulo-principal.color-acento-contenido
+    .titulo-principal.color-acento-contenido(data-aos="flip-up")
       .titulo-principal__numero
         span 5
       h1 #[i Reporting verbs] (verbos para reportar)
     .row.mb-5
-      .col-lg-8.mb-4.mb-lg-0
+      .col-lg-8.mb-4.mb-lg-0(data-aos="fade-right")
         traductor.color-primario
           div(slot="textoIngles")
             p.mb-0 #[i When reporting what others have said, there are few verbs used in order to communicate the ideas expressed. However, not all the verbs are used in the same way. Some of them need to be used in a specific way, following a structure. Let’s see next:]
           div(slot="textoEspanol")
             p.mb-0 Cuando se informa de lo que otros han dicho, se utilizan algunos verbos para comunicar las ideas expresadas. Sin embargo, no todos los verbos se utilizan de la misma manera. Algunos de ellos deben utilizarse de forma específica, siguiendo una estructura. Veamos a continuación:
-      .col-lg-4
+      .col-lg-4(data-aos="fade-left")
         figure
           img(src="@/assets/curso/tema5/img1.svg", style="width:450px").m-auto
     .row.px-5.pt-5.bg-c10
       .col-12
         .row.align-items-end.mb-5
-          .col-3.d-none.d-lg-block
+          .col-3.d-none.d-lg-block(data-aos="fade-right")
             figure
               img(src="@/assets/curso/tema5/img3.svg", style="width:450px").m-auto
-          .col-lg-9
+          .col-lg-9(data-aos="fade-left")
             .tarjeta.tarjeta--blanca.shadow-lg.p-4
               SlyderA(tipo="b")
                 .row.m-1
@@ -214,7 +214,7 @@
                           @audio-hover="mostrarIndicadorTarjetaAudio = false"
                         )
                           .indicador--click(v-if="mostrarIndicadorTarjetaAudio")
-                        p.ms-3.mb-4 Les advertí que no utilizaran un vocabulario grosero con tus compañeros de trabajo.
+                        p.ms-3.mb-4 Les advertí que no utilizaran un vocabulario grosero con sus compañeros de trabajo.
                         p #[i.txt-c7 #[b Warn + someone + about + something]]
                         TarjetaAudio.color-primario.mb-3(
                           texto="<em>She warned us about the new economic policies.</em>"
@@ -226,7 +226,7 @@
                       .col-lg-6
                         figure
                           img(src="@/assets/curso/tema5/img8.png", style="width:400px").m-auto
-        .row.mb-5
+        .row.mb-5(data-aos="fade-right")
           .col-12.p-4.bg-c7
             .row.align-items-center
               .col-lg-11.mb-4.mb-lg-0
@@ -234,9 +234,9 @@
               .col-lg-1
                 figure
                   img(src="@/assets/curso/tema5/img5.svg", style="width:150px").m-auto
-        Dialogo.color-primario(:dialogo="dialogo")
+        Dialogo.color-primario(:dialogo="dialogo")(data-aos="fade-left")
           template(#nombre-actividad) Arrastrar y Soltar
-          template(#titulo-actividad) #[i Slang practice]
+          template(#titulo-actividad) #[i Reporting verbs]
           template(#descripcion-actividad) Arrastra y suelta cada una de las palabras en el orden correcto.
 
 </template>
@@ -281,8 +281,7 @@ export default {
         },
         {
           personaje: 'Mary',
-          textoIng:
-            '<i>Remember I</i> *** <i>you about how forgetful he is.</i>',
+          textoIng: '<i>Remember I</i> *** <i>you how forgetful he is.</i>',
           textoEsp: 'Recuerda que te advertí de lo olvidadizo que es.',
           audio: require('@/assets/curso/tema5/Mary2.mp3'),
           palabra: 'warned',

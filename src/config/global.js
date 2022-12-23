@@ -194,7 +194,7 @@ export default {
     {
       tema: '<em>Applied grammar</em> (Gramática aplicada)',
       referencia:
-        'BBC Learning English. (2017). <em>Tense: The Grammar Gameshow Episode 13 [Video]</em>. YouTube.',
+        'BBC Learning English. (2017). <em>The Past Perfect Tense: The Grammar Gameshow Episode 13 [Video]</em>. YouTube.',
       tipo: 'Video',
       link:
         'https://www.youtube.com/watch?v=05HXVE05vjg&t=2s&ab_channel=BBCLearningEnglish',
@@ -316,7 +316,7 @@ export default {
     gestoresRepositorio: [
       {
         nombre: 'Milady Tatiana Villamil Castellanos',
-        cargo: 'Validación y vinculación en plataforma LMS',
+        cargo: 'Responsable del equipo de gestión de repositorio',
         centro: 'Centro de Comercio y Servicios - Regional Tolima',
       },
       {

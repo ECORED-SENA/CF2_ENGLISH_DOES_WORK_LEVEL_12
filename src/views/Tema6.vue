@@ -3,20 +3,20 @@
   BannerInterno
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
     
-    .titulo-principal.color-acento-contenido.mb-0
+    .titulo-principal.color-acento-contenido.mb-0(data-aos="flip-up")
       .titulo-principal__numero
         span 6
       h1 #[i Feeling verbs] (Verbos que expresan sentimientos)
     .row.px-5.pt-5.bg-c12
       .col-12
         .row.align-items-start.mb-5
-          .col-lg-4.mb-4.mb-lg-0
+          .col-lg-4.mb-4.mb-lg-0(data-aos="fade-right")
             traductor.color-primario
               div(slot="textoIngles")
                 p.mb-0 #[i Being able to express feelings is an important skill no matter the language you are learning. However, people tend to use the same basic verbs; therefore, it is a good idea to start learning some alternatives that will allow you to show your feelings in a more complex way. Let’s see some other ways to express your feelings:]
               div(slot="textoEspanol")
                 p.mb-0 Ser capaz de expresar los sentimientos es una habilidad importante, independientemente del idioma que se aprenda. Sin embargo, la gente tiende a utilizar los mismos verbos básicos; por lo tanto, es una buena idea empezar a aprender algunas alternativas que le permitirán mostrar sus sentimientos de una manera más compleja. Veamos otras formas de expresar sus sentimientos:
-          .col-lg-8
+          .col-lg-8(data-aos="fade-left")
             .tarjeta.tarjeta--azul.shadow-lg.p-4
               SlyderF(columnas="col-12 col-md-6")
                 .tarjeta.color-acento-botones
@@ -149,7 +149,7 @@
                         @audio-hover="mostrarIndicadorTarjetaAudio = false"
                       )
                         .indicador--click(v-if="mostrarIndicadorTarjetaAudio")
-        .row.mb-5
+        .row.mb-5(data-aos="fade-right")
           .col-12.p-4.bg-c7
             .row.align-items-center
               .col-lg-11.mb-4.mb-lg-0
@@ -157,7 +157,7 @@
               .col-lg-1
                 figure
                   img(src="@/assets/curso/tema6/img2.svg", style="width:150px").m-auto
-        Dialogo.color-primario(:dialogo="dialogo")
+        Dialogo.color-primario(:dialogo="dialogo")(data-aos="fade-left")
           template(#nombre-actividad) Arrastrar y Soltar
           template(#titulo-actividad) #[i Feeling verbs practice]
           template(#descripcion-actividad) Arrastra y suelta cada una de las palabras en el orden correcto.
